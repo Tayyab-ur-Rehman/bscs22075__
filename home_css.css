@@ -1,16 +1,16 @@
 
 head
 {
-  background-color: blue;
-  color:blue;
+  background-color: rgb(44, 43, 43);
+  color:rgb(253, 251, 251);
   margin :0%;
   padding:0%;
 }
 
 body
 {
-    color:rgb(173, 51, 51);
-    background-color: white;
+    color:white;
+    background-color: rgb(44, 43, 43);
   
   margin :0%;
   padding:0%;
@@ -19,24 +19,29 @@ body
 .navbar
 {
 
-display:flex;
-align-content: flex-start;
-background-color: blue;
-color:white;
+    display:flex;
+    align-content: flex-start;
+    background-color: rgb(44, 43, 43);
+    color:white;
+    padding: 1%;
+    border-bottom: 2px solid rgb(243, 238, 238);
 
 }
+
 .navbaritem
 {
 
     padding-right: 3%;
     color:white;
-    text-decoration-color: antiquewhite;
+    text-decoration:none;
+
 }
 .navbaritem2
 {
 
     font-weight: bold;
-    padding-right: 70%;
+    padding-right: 50%;
+    text-transform: capitalize;
 }
 .links
 {
@@ -44,4 +49,73 @@ color:white;
     color:white;
 
 }
+.body-container
+{
 
+
+    display: flex;
+    padding: 3%;
+    padding-left: 7%;
+    
+}
+
+.info{
+
+    padding-right: 25%;
+    
+}
+
+.imgs
+{
+    width: 20%; /* You can set any size you want */
+    height: 20%; /* Ensure it's a square for a perfect circle */
+    border-radius: 80%;
+    object-fit: cover; /* Ensures the image covers the area and maintains aspect ratio */
+    border: 5px solid #2c2b2b; /* Optional: Add a border */
+}
+
+.logo
+{
+    width:  40%; /* You can set any size you want */
+    height: 80%; /* Ensure it's a square for a perfect circle */
+    border-radius: 30%;
+    max-width: 100px; 
+    padding: 0%;
+    margin: 0%;
+    object-fit: cover ; overflow: hidden;
+}
+
+.logo2
+{
+    width:  70%; /* You can set any size you want */
+    height: 80%; /* Ensure it's a square for a perfect circle */
+    border-radius: 5%;
+    max-width: 200px; 
+    padding: 0%;
+    margin: 0%;
+    object-fit: cover ; overflow: hidden;
+}
+
+
+
+.image-container {
+    
+    display: flex;
+    background-color: rgb(44, 43, 43);;
+    justify-content: left;
+    padding-left: 5%;
+    margin: 0%;
+    gap: 0;
+    object-fit: cover ; 
+    overflow: hidden;
+}
+
+
+.arabic {
+    font-family: 'Noto Sans Arabic', sans-serif; /* Font that supports Arabic script */
+    direction: rtl; /* Right-to-left text direction for Arabic */
+    text-align: center; /* Align text to the right for Arabic */
+    padding: 1%;
+    font-weight: bold;
+    font-size: 200%;
+}
