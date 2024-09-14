@@ -1,0 +1,47 @@
+
+head
+{
+  background-color: blue;
+  color:blue;
+  margin :0%;
+  padding:0%;
+}
+
+body
+{
+    color:rgb(173, 51, 51);
+    background-color: white;
+  
+  margin :0%;
+  padding:0%;
+}
+
+.navbar
+{
+
+display:flex;
+align-content: flex-start;
+background-color: blue;
+color:white;
+
+}
+.navbaritem
+{
+
+    padding-right: 3%;
+    color:white;
+    text-decoration-color: antiquewhite;
+}
+.navbaritem2
+{
+
+    font-weight: bold;
+    padding-right: 70%;
+}
+.links
+{
+    
+    color:white;
+
+}
+
