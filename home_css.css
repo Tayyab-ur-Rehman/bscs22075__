@@ -20,7 +20,6 @@ body
 {
 
     display:flex;
-    align-content: flex-start;
     background-color: rgb(44, 43, 43);
     color:white;
     padding: 1%;
@@ -31,7 +30,7 @@ body
 .navbaritem
 {
 
-    padding-right: 3%;
+    padding-left: 2%;
     color:white;
     text-decoration:none;
 
@@ -118,4 +117,44 @@ body
     padding: 1%;
     font-weight: bold;
     font-size: 200%;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    
+
+
+.navbaritem
+{
+
+    padding-right: 1%;
+    padding-right: 0%;
+    color:white;
+    size: 2%;
+
+}
+.navbaritem2
+{
+
+    font-weight: bold;
+    padding-right: 5%;
+    text-transform: capitalize;
+}
+
+.imgs
+{
+
+    height: 45%;
+    width: 25%;
+}
+
+.image-container
+{
+    align-content: end;
+}
+
 }
