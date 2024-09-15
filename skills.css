@@ -1,32 +1,31 @@
 
-
-.Sec1 {
+#Sec1 {
     background-color: rgb(145, 9, 9);
     color: white;
 }
 
-.Sec2 {
+#Sec2 {
     background-color: crimson;
     color: white;
 }
 
-.Sec3 {
+#Sec3 {
     background-color: forestgreen;
     color: white;
 }
 
-.Sec4 {
+#Sec4 {
     background-color: #333;
     color: white;
 }
 
-.Sec5 {
+#Sec5 {
     background-color: #f4f4f4;
     color: black;
     border: 2px solid #333;
 }
 
-.Sec6 {
+#Sec6 {
     background-color: yellowgreen;
     color: white;
 }
@@ -40,7 +39,7 @@
 
 /* Hover Effects */
 section:hover {
-    transform: scale(1.02);
+    transform: scale(1.06);
     box-shadow: 0 6px 12px rgba(182, 16, 16, 0.2);
 }
 

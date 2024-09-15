@@ -10,22 +10,21 @@
 <nav>
    
         <ul class="navbar">
-            <div  class ="navbaritem2">  Tayyab  </div>
+            <div id="first" class ="navbaritem2" onclick="changeColor()">  color change </div>
             <div class ="navbaritem" ><a class="links"  href="F:\Documents\GitHub\bscs22075__\file1.html">Home</a></div>
             <div class ="navbaritem" ><a class="links"   href="F:\Documents\GitHub\bscs22075__\Projects.html">Projects</a></div>
             <div class ="navbaritem" ><a class="links"   href="F:\Documents\GitHub\bscs22075__\competition.html">Competitions</a></div>
             <div class ="navbaritem" ><a class="links"   href="F:\Documents\GitHub\bscs22075__\Skills.html">Skills</a></div>
             <div class ="navbaritem" ><a class="links"   href="F:\Documents\GitHub\bscs22075__\education.html">education</a></div>
-
+           
         </ul>
 </nav>
-
 
 
 <body>
 
     
-<section class="Sec1">
+<section id="Sec1">
             <h1 class="text-big" 
                 id="web">Web Technology
               </h1>
@@ -43,7 +42,7 @@
             </p>
 </section>
 
-<section class="Sec2">
+<section id="Sec2">
             <h1 class="text-big" 
                 id="program">
                 C Programming
@@ -61,7 +60,7 @@
             </p>
 </section>
 
-<section class="Sec3">
+<section id="Sec3">
         <h1 class="sectionTag text-big">Python</h1>
         <p class="sectionSubTag text-small">
             Python is a versatile, high-level programming language known for its simplicity and 
@@ -72,7 +71,7 @@
 </section>
 
 
-<section class="Sec4">
+<section id="Sec4">
     <h1 class="sectionTag text-big">Kotlin Compose</h1>
     <p class="sectionSubTag text-small">
         Kotlin is a statically typed programming language that is fully interoperable with Java 
@@ -82,7 +81,7 @@
 </section>
 
 
-<section class="Sec5">
+<section id="Sec5">
     <h1 class="sectionTag text-big">Latex</h1>
     <p class="sectionSubTag text-small">
         LaTeX is a high-quality typesetting system used for creating documents that 
@@ -92,7 +91,7 @@
 </section>
 
 
-<section class="Sec6">
+<section id="Sec6">
     <h1 class="sectionTag text-big">Problem Solving</h1>
     <p class="sectionSubTag text-small">
         Problem solving in programming involves analyzing a problem, designing algorithms, and
@@ -102,7 +101,7 @@
 </section>
 
 
-<section class="Sec7">
+<section id="Sec7">
     <h1 class="sectionTag text-big">Communication Skills</h1>
     <p class="sectionSubTag text-small">
         They involve both verbal and non-verbal methods, including active listening, clarity in speech, and 
@@ -112,3 +111,26 @@
 </section>
 
 </body>
+
+<script>
+    function getRandomColor() {
+        // Generate a random hexadecimal color code
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+    function changeColor()
+    {
+        document.getElementById('Sec1').style.backgroundColor=getRandomColor();
+        document.getElementById('Sec2').style.backgroundColor=getRandomColor();
+        document.getElementById('Sec3').style.backgroundColor=getRandomColor();
+        document.getElementById('Sec4').style.backgroundColor=getRandomColor();
+        document.getElementById('Sec5').style.backgroundColor=getRandomColor();
+        document.getElementById('Sec6').style.backgroundColor=getRandomColor();
+        document.getElementById('Sec7').style.backgroundColor=getRandomColor();
+    }
+    </script>
+
