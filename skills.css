@@ -31,6 +31,13 @@
     color: white;
 }
 
+
+
+.Sec7{
+    background-color: black;
+    color: white;
+}
+
 /* Hover Effects */
 section:hover {
     transform: scale(1.02);
