@@ -48,7 +48,20 @@ header h1 {
     padding: 0;
 }
 
-
+.project_vid
+{
+    display:list-item;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    width: 60%; 
+    height: 100%; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
 
 
 .project img {
@@ -84,7 +97,11 @@ header h1 {
     width: 10%;
 }
 
-
+.vid_link
+{
+   padding: 20%;
+   color: #2326d1;
+}
 
 
 @media only screen and (max-width: 768px) {

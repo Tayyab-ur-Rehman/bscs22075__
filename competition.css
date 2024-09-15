@@ -1,0 +1,145 @@
+.header_image
+{
+width:100%;
+}
+
+
+
+
+.Sec1 {
+    background-color: rgb(145, 9, 9);
+    color: white;
+}
+
+
+
+.Sec2 {
+    background-color: rgba(86, 64, 114, 0.562);
+    color: white;
+}
+
+.Sec3 {
+    background-color: forestgreen;
+    color: white;
+}
+
+.Sec4 {
+    background-color: #333;
+    color: white;
+}
+
+.Sec5 {
+    background-color: #f4f4f4;
+    color: black;
+    border: 2px solid #333;
+}
+
+.Sec6 {
+    background-color: yellowgreen;
+    color: white;
+}
+
+/* Hover Effects */
+section:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 12px rgba(182, 16, 16, 0.2);
+    background-color: black;
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 2rem auto;
+    max-width: 1200px;
+    
+    padding: 3rem;
+    align-items: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+   
+}
+
+.text {
+    position: absolute;
+    top: 60%;
+    left:12%;
+    color: black;
+    font-size: 8rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+
+
+
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 10%;
+    }
+    section:hover {
+        
+        padding: 1rem;
+        transform: scale(1.2);
+        margin: 10%;
+    }
+    .text
+    {
+        top: 15%;
+        left:12%;
+        font-size: 250%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
