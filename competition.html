@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home_css.css">
     <link rel="stylesheet" href="competition.css">
+    <script src="javascript.js" defer></script>
     <title>Document</title>
     
 <nav>
@@ -64,31 +65,31 @@
 </body>
 
 <script>
-    let jsonData = {
+     let jsonData = {
    
     competitions:["ICPC online",  "ICPC All Pakistan" , "HACK-X by LUMS" ,"SOFT TECH" ],
     competitions_info:[
         "The International Collegiate Programming Contest (ICPC) is one of the most prestigious competitive programming competitions for university students worldwide.Me along my team took part in the competition and among 300 teams from Pakistan my team was selected for next round"
         ," The International Collegiate Programming Contest (ICPC) is one of the most prestigious competitive programming competitions for university students worldwide.On campus competition held in GIKI"
         ,"HackX LUMS is an annual hackathon organized by the Lahore University of Management Sciences (LUMS) in Pakistan"
-        ,"CP competition conducted by Fast university "
-    ]
+        ,"CP competition conducted by Fast university "]
     
 };
 
 let json_form = JSON.stringify(jsonData);
-let Data = JSON.parse(json_form);
+let Data2 = JSON.parse(json_form);
 
 
 
 for(let i=0;i<4;i++)
 {
-    let  h="h"+i.toString();
-    let p="p"+i.toString();
-    document.getElementById(h).innerHTML = Data.competitions[i];
-    document.getElementById(p).innerHTML = Data.competitions_info[i];
+    let  h="h"+(i+1).toString();
+    let p="p"+(i+1).toString();
+    
+    document.getElementById(h).innerText = Data2.competitions[i];
+    document.getElementById(p).innerText = Data2.competitions_info[i];
 }
    
 
 
-</script>
+</script> 

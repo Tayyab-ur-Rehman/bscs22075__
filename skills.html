@@ -28,17 +28,8 @@
             <h1 class="text-big" 
                 id="web">Web Technology
               </h1>
-            <p class="text-small">
-                HTML stands for HyperText Markup Language.
-                It is used to design web pages using a markup
-                language. HTML is the combination of Hypertext
-                and Markup language. Hypertext defines the
-                link between the web pages. A markup language
-                is used to define the text document within tag
-                which defines the structure of web pages.
-                HTML is a markup language that is used by the
-                browser to manipulate text, images, and other
-                content to display it in the required format.
+            <p class="text-small"  id="para1">
+               
             </p>
 </section>
 
@@ -47,64 +38,46 @@
                 id="program">
                 C Programming
             </h1>
-            <p class="text-small">
-                C is a procedural programming language. It
-                was initially developed by Dennis Ritchie
-                as a system programming language to write
-                operating system. The main features of C
-                language include low-level access to memory,
-                simple set of keywords, and clean style,
-                these features make C language suitable for
-                system programming like operating system or
-                compiler development.
+            <p class="text-small"  id="para2" >
+              
             </p>
 </section>
 
 <section id="Sec3">
         <h1 class="sectionTag text-big" id="py">Python</h1>
-        <p class="sectionSubTag text-small">
-            Python is a versatile, high-level programming language known for its simplicity and 
-            readability. It supports multiple programming paradigms, including object-oriented, 
-            imperative, and functional programming. Python is widely used in web development, 
-            automation, data science, and machine learning.
+        <p class="sectionSubTag text-small"  id="para3">
+            
         </p>
 </section>
 
 
 <section id="Sec4">
     <h1 class="sectionTag text-big" id="kc">Kotlin Compose</h1>
-    <p class="sectionSubTag text-small">
-        Kotlin is a statically typed programming language that is fully interoperable with Java 
-        and runs on the Java Virtual Machine (JVM). It is designed to improve code safety and 
-        productivity, often used in Android development and backend services.
+    <p class="sectionSubTag text-small"  id="para4">
+      
     </p>
 </section>
 
 
 <section id="Sec5">
-    <h1 class="sectionTag text-big" h="l">Latex</h1>
-    <p class="sectionSubTag text-small">
-        LaTeX is a high-quality typesetting system used for creating documents that 
-        require precise formatting, such as academic papers and technical reports.
-        It handles complex structures like mathematical equations and bibliographies with ease.
+    <h1 class="sectionTag text-big" id="l">Latex</h1>
+    <p class="sectionSubTag text-small"  id="para5">
+       
     </p>
 </section>
 
 
 <section id="Sec6">
     <h1 class="sectionTag text-big" id="ps">Problem Solving</h1>
-    <p class="sectionSubTag text-small">
-        Problem solving in programming involves analyzing a problem, designing algorithms, and
-         implementing efficient solutions. It requires logical thinking and proficiency in various
-          programming languages, making it a key skill for software development and technical tasks.
+    <p class="sectionSubTag text-small"  id="para6">
+      
     </p>
 </section>
 
 
 <section id="Sec7">
     <h1 class="sectionTag text-big" id="cs">Communication Skills</h1>
-    <p  class="sectionSubTag text-small" >
-        They involve both verbal and non-verbal methods, including active listening, clarity in speech, and  emotional intelligence. Strong communication fosters collaboration, builds relationships,and prevents misunderstandings in both personal and professional environments.
+    <p  class="sectionSubTag text-small" id="para7">
     </p>
 </section>
 
@@ -114,16 +87,27 @@
 
 
 
-    let heading=["Web Technology" ,"C/C++ programming ","Python"," Kotlin Compose", "Latex", "Problem Solving" ,"Communication Skills"];
-    let ids=["web","program","py","kc","l","ps","cs"]
+    let heading=["Web Technology" ,"C/C++ yyy programming ","Python"," Kotlin Compose", "Latex","problem solving ","Communication Skills"];
+    let ids=["web","program","py","kc","l","ps","cs"];
+     let data1=[ " HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web pages. A markup language is used to define the text document within tag which defines the structure of web pages. HTML is a markup language that is used by the browser to manipulate text, images, and other content to display it in the required format. ",
+        " C is a procedural programming language. It was initially developed by Dennis Ritchieas a system programming language to write operating system.",
+        " Python is a versatile, high-level programming language known for its simplicity and  readability. It supports multiple programming paradigms, including object-oriented,  imperative, and functional programming. Python is widely used in web development,  automation, data science, and machine learning. ",
+        "Kotlin is a statically typed programming language that is fully interoperable with Java and runs on the Java Virtual Machine (JVM). It is designed to improve code safety and productivity, often used in Android development and backend services. ",
+        "LaTeX is a high-quality typesetting system used for creating documents that require precise formatting, such as academic papers and technical reports. It handles complex structures like mathematical equations and bibliographies with ease.",
+        "  Problem solving in programming involves analyzing a problem, designing algorithms, and implementing efficient solutions. It requires logical thinking and proficiency in various programming languages, making it a key skill for software development and technical tasks.",
+        " They involve both verbal and non-verbal methods, including active listening, clarity in speech, and  emotional intelligence. Strong communication fosters collaboration, builds relationships,and prevents misunderstandings in both personal and professional environments u." ];
+  
+  
+        for(let i=0;i<=6;i++){
+    document.getElementById(ids[i]).innerText=heading[i];
+    let k=i+1;
+        let st="para"+k;
+        console.log(st);
 
-   
-    for(let i=0;i<=6;i++)
-    document.getElementById(ids[i]).innerHTML=heading[i];
+        document.getElementById(st).innerHTML=data1[i];
 
-    document.getElementById("para7").innerHTML="eahrbf,jsdh";
-
-
+     };
+    
 
     function getRandomColor() {
         // Generate a random hexadecimal color code

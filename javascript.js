@@ -28,8 +28,8 @@ document.getElementById("linkdin").href = Data.linkdinlink;
 
 for(let i=0;i<4;i++)
 {
-    let  h="h"+i.toString();
-    let p="p"+i.toString();
+    let  h="h"+(i+1).toString();
+    let p="p"+(i+1).toString();
     document.getElementById(h).innerHTML = Data.competitions[i];
     document.getElementById(p).innerHTML = Data.competitions_info[i];
 }
