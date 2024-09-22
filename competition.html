@@ -30,42 +30,31 @@
     </div>
     
 <section class="Sec1">
-            <h1 >ICPC online
+            <h1 id="h1" >
               </h1>
-            <p class="text-small">
-                The International Collegiate Programming Contest (ICPC) is one
-                 of the most prestigious competitive programming competitions for university 
-                 students worldwide.Me along my team took part in the competition and among 300 teams
-                  from Pakistan my team was selected for next round
+            <p class="text-small" id="p1">
+                
             </p>
 </section>
 
 <section class="Sec2">
-            <h1 class="text-big" 
-                id="program">
-                ICPC All Pakistan
-            </h1>
-            <p class="text-small">
-                The International Collegiate Programming Contest (ICPC) is one
-                of the most prestigious competitive programming competitions for university 
-                students worldwide.On campus competition held in GIKI
-            </p>
+    <h1 id="h2" >
+    </h1>
+  <p class="text-small" id="p2">
+      
+  </p>
 </section>
 
 <section class="Sec3">
-        <h1 class="sectionTag text-big">HACK-X by LUMS</h1>
-        <p class="sectionSubTag text-small">
-         
-        HackX LUMS is an annual hackathon 
-        organized by the Lahore University of Management Sciences (LUMS) in Pakistan.
-        </p>
+        <h1 class="sectionTag text-big" id="h3"></h1>
+        <p class="sectionSubTag text-small" id="p3"> </p>
 </section>
 
 
 <section class="Sec4">
-    <h1 class="sectionTag text-big">SOFT TECH</h1>
-    <p class="sectionSubTag text-small">
-        CP competition conducted by Fast university  
+    <h1 class="sectionTag text-big" id="h4"></h1>
+    <p class="sectionSubTag text-small" id="p4">
+        
     </p>
 </section>
 
@@ -73,3 +62,33 @@
 </section>
 
 </body>
+
+<script>
+    let jsonData = {
+   
+    competitions:["ICPC online",  "ICPC All Pakistan" , "HACK-X by LUMS" ,"SOFT TECH" ],
+    competitions_info:[
+        "The International Collegiate Programming Contest (ICPC) is one of the most prestigious competitive programming competitions for university students worldwide.Me along my team took part in the competition and among 300 teams from Pakistan my team was selected for next round"
+        ," The International Collegiate Programming Contest (ICPC) is one of the most prestigious competitive programming competitions for university students worldwide.On campus competition held in GIKI"
+        ,"HackX LUMS is an annual hackathon organized by the Lahore University of Management Sciences (LUMS) in Pakistan"
+        ,"CP competition conducted by Fast university "
+    ]
+    
+};
+
+let json_form = JSON.stringify(jsonData);
+let Data = JSON.parse(json_form);
+
+
+
+for(let i=0;i<4;i++)
+{
+    let  h="h"+i.toString();
+    let p="p"+i.toString();
+    document.getElementById(h).innerHTML = Data.competitions[i];
+    document.getElementById(p).innerHTML = Data.competitions_info[i];
+}
+   
+
+
+</script>

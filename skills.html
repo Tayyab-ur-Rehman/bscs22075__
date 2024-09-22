@@ -61,7 +61,7 @@
 </section>
 
 <section id="Sec3">
-        <h1 class="sectionTag text-big">Python</h1>
+        <h1 class="sectionTag text-big" id="py">Python</h1>
         <p class="sectionSubTag text-small">
             Python is a versatile, high-level programming language known for its simplicity and 
             readability. It supports multiple programming paradigms, including object-oriented, 
@@ -72,7 +72,7 @@
 
 
 <section id="Sec4">
-    <h1 class="sectionTag text-big">Kotlin Compose</h1>
+    <h1 class="sectionTag text-big" id="kc">Kotlin Compose</h1>
     <p class="sectionSubTag text-small">
         Kotlin is a statically typed programming language that is fully interoperable with Java 
         and runs on the Java Virtual Machine (JVM). It is designed to improve code safety and 
@@ -82,7 +82,7 @@
 
 
 <section id="Sec5">
-    <h1 class="sectionTag text-big">Latex</h1>
+    <h1 class="sectionTag text-big" h="l">Latex</h1>
     <p class="sectionSubTag text-small">
         LaTeX is a high-quality typesetting system used for creating documents that 
         require precise formatting, such as academic papers and technical reports.
@@ -92,7 +92,7 @@
 
 
 <section id="Sec6">
-    <h1 class="sectionTag text-big">Problem Solving</h1>
+    <h1 class="sectionTag text-big" id="ps">Problem Solving</h1>
     <p class="sectionSubTag text-small">
         Problem solving in programming involves analyzing a problem, designing algorithms, and
          implementing efficient solutions. It requires logical thinking and proficiency in various
@@ -102,17 +102,29 @@
 
 
 <section id="Sec7">
-    <h1 class="sectionTag text-big">Communication Skills</h1>
-    <p class="sectionSubTag text-small">
-        They involve both verbal and non-verbal methods, including active listening, clarity in speech, and 
-        emotional intelligence. Strong communication fosters collaboration, builds relationships,
-         and prevents misunderstandings in both personal and professional environments.
+    <h1 class="sectionTag text-big" id="cs">Communication Skills</h1>
+    <p  class="sectionSubTag text-small" >
+        They involve both verbal and non-verbal methods, including active listening, clarity in speech, and  emotional intelligence. Strong communication fosters collaboration, builds relationships,and prevents misunderstandings in both personal and professional environments.
     </p>
 </section>
 
 </body>
 
 <script>
+
+
+
+    let heading=["Web Technology" ,"C/C++ programming ","Python"," Kotlin Compose", "Latex", "Problem Solving" ,"Communication Skills"];
+    let ids=["web","program","py","kc","l","ps","cs"]
+
+   
+    for(let i=0;i<=6;i++)
+    document.getElementById(ids[i]).innerHTML=heading[i];
+
+    document.getElementById("para7").innerHTML="eahrbf,jsdh";
+
+
+
     function getRandomColor() {
         // Generate a random hexadecimal color code
         const letters = '0123456789ABCDEF';
@@ -124,13 +136,11 @@
     }
     function changeColor()
     {
-        document.getElementById('Sec1').style.backgroundColor=getRandomColor();
-        document.getElementById('Sec2').style.backgroundColor=getRandomColor();
-        document.getElementById('Sec3').style.backgroundColor=getRandomColor();
-        document.getElementById('Sec4').style.backgroundColor=getRandomColor();
-        document.getElementById('Sec5').style.backgroundColor=getRandomColor();
-        document.getElementById('Sec6').style.backgroundColor=getRandomColor();
-        document.getElementById('Sec7').style.backgroundColor=getRandomColor();
+        for(let i=1;i<=7;i++){
+        let h="Sec"+i
+        document.getElementById(h).style.backgroundColor=getRandomColor();
+        }
+       
     }
     </script>
 
