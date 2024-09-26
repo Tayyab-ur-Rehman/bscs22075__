@@ -7,37 +7,28 @@ width:100%;
 
 
 .Sec1 {
-    background-color: rgb(145, 9, 9);
+    background: linear-gradient( red, rgb(47, 8, 51));
+
     color: white;
 }
 
 
 
 .Sec2 {
-    background-color: rgba(86, 64, 114, 0.562);
+    background: linear-gradient( rgb(47, 8, 51),rgb(27, 192, 151) );
     color: white;
 }
 
 .Sec3 {
-    background-color: forestgreen;
+    background: linear-gradient( rgb(27, 192, 151) 20%,  rgb(2, 44, 21) 80%);
     color: white;
 }
 
 .Sec4 {
-    background-color: #333;
+    background: linear-gradient(  rgb(141, 7, 7) , rgb(0, 0, 0) );
     color: white;
 }
 
-.Sec5 {
-    background-color: #f4f4f4;
-    color: black;
-    border: 2px solid #333;
-}
-
-.Sec6 {
-    background-color: yellowgreen;
-    color: white;
-}
 
 /* Hover Effects */
 section:hover {
