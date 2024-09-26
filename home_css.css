@@ -1,4 +1,59 @@
 
+/* General styles */
+
+
+.content {
+    flex: 1; /* Takes up the remaining space */
+    padding: 20px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 0px ; /* Vertical padding */
+    border-top: #fff solid;
+}
+
+.footer-message {
+    font-size: 1-px; /* Message font size */
+    margin: 0 0 10px 0; /* Margin below the message */
+}
+
+.footer p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.footer ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 10px; /* Horizontal spacing */
+}
+
+.footer a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+.big_icon
+{
+
+
+    font-size: 70px;
+    padding: 20px;
+}
+
+
 head
 {
   background-color: rgb(44, 43, 43);
@@ -22,7 +77,7 @@ body
     display:flex;
     background-color: rgb(44, 43, 43);
     color:white;
-    padding: 1%;
+    padding: 25px;;
     border-bottom: 2px solid rgb(243, 238, 238);
 
 }
@@ -101,12 +156,12 @@ body
     
     display: flex;
     background-color: rgb(44, 43, 43);;
-    justify-content: left;
-    padding-left: 5%;
-    margin: 0%;
-    gap: 0;
-    object-fit: cover ; 
-    overflow: hidden;
+    justify-content:center;
+    padding-left: 10px;
+    margin: 10px;
+    
+    
+    
 }
 
 
@@ -124,16 +179,12 @@ body
 
 
 @media only screen and (max-width: 768px) {
-
-    
-
-
 .navbaritem
 {
 
     padding-right: 1%;
-    padding-right: 0%;
-    color:white;
+   
+    color:rgb(199, 194, 194);
     size: 2%;
 
 }
@@ -141,20 +192,51 @@ body
 {
 
     font-weight: bold;
-    padding-right: 5%;
-    text-transform: capitalize;
+    padding-right: 6%;
+    
 }
 
+.body-container
+{
+    display: block;
+    
+}
+.info
+{
+    position: relative;
+    
+    margin: 30px;
+    width:80%;
+    top: 300px;
+    
+
+}
 .imgs
 {
+    bottom: 160px;
+    left: 100px;
+    height: 277px;
+    width: 150px;
+    border-radius: 40px;
 
-    height: 45%;
-    width: 25%;
+    object-fit: cover; /* Ensures the image covers the area and maintains aspect ratio */
+    border: 5px solid #2c2b2b; 
+    position: relative;
+  
 }
 
-.image-container
-{
-    align-content: end;
+.footer {
+    padding: 15px; /* Slightly reduce padding on smaller screens */
+    position: relative;
+    top: 80px;
 }
 
+.footer-message {
+    font-size: 14px; /* Adjust message font size for smaller screens */
+}
+
+.footer ul li {
+    display: block; /* Stack list items vertically on small screens */
+    margin: 5px 0; /* Add vertical spacing between items */
+}
 }

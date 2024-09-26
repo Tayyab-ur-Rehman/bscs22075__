@@ -32,8 +32,8 @@ width:100%;
 
 /* Hover Effects */
 section:hover {
-    transform: scale(1.12);
-    box-shadow: 0 6px 12px rgba(182, 16, 16, 0.2);
+    transform: scale(1.08);
+    box-shadow: 0 12px 12px rgba(17, 0, 0, 0.925);
     background-color: black;
 }
 
@@ -42,7 +42,7 @@ section:hover {
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 6px;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -61,12 +61,12 @@ p {
 }
 
 section {
-    margin: 2rem auto;
+    margin:70px;
     max-width: 1200px;
     
-    padding: 3rem;
+    padding: 20px ;
     align-items: center;
-    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, background-color 0.6s;
 }
 .image-container {
     position: relative;

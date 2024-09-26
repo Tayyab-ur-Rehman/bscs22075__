@@ -1,54 +1,98 @@
 
+
+/* Footer styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 0px ; /* Vertical padding */
+    border-top: #fff solid;
+}
+
+.footer-message {
+    font-size: 1-px; /* Message font size */
+    margin: 0 0 10px 0; /* Margin below the message */
+}
+
+.footer p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.footer ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 10px; /* Horizontal spacing */
+}
+
+.footer a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
 #Sec1 {
-    background-color: rgb(145, 9, 9);
+    background: linear-gradient( red, rgb(47, 8, 51));
+
     color: white;
+   
 }
 
 #Sec2 {
-    background-color: crimson;
+    background: linear-gradient( rgb(47, 8, 51),rgb(27, 192, 151) );
     color: white;
 }
 
 #Sec3 {
-    background-color: forestgreen;
+    background: linear-gradient( rgb(27, 192, 151) 20%,  rgb(2, 44, 21) 80%);
+
     color: white;
 }
 
 #Sec4 {
-    background-color: #333;
+    background: linear-gradient(  rgb(141, 7, 7) , rgb(0, 0, 0) );
     color: white;
 }
 
 #Sec5 {
-    background-color: #f4f4f4;
-    color: black;
-    border: 2px solid #333;
+    background: linear-gradient(  rgb(38, 170, 26) , rgb(21, 45, 182) );
+    color: white;
+   
 }
 
 #Sec6 {
-    background-color: yellowgreen;
+    background: linear-gradient(  rgb(228, 214, 15) , rgb(0, 0, 0) );
     color: white;
 }
 
 
 
-.Sec7{
-    background-color: black;
-    color: white;
+#Sec7{
+    background: linear-gradient(  rgb(233, 102, 102) , rgb(129, 9, 59) );
+    color: rgb(240, 240, 240);
 }
 
 /* Hover Effects */
 section:hover {
-    transform: scale(1.06);
-    box-shadow: 0 6px 12px rgba(182, 16, 16, 0.2);
+  
+    transform: scale(1.03);
+   
 }
 
 
 
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin-left : 10px;
+    margin-right : 10px;
+    padding: 5px;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -67,9 +111,9 @@ p {
 }
 
 section {
-    margin: 2rem auto;
+    margin: 40px;
     max-width: 1200px;
-    border-radius: 10%;
+    border-radius: 25%;
     padding: 3rem;
     align-items: center;
     transition: transform 0.3s, background-color 0.3s;
@@ -92,13 +136,30 @@ section {
     section {
         padding: 1rem;
         margin: 10%;
+        border-radius: 20%;
     }
     section:hover {
         
         padding: 1rem;
-        transform: scale(1.2);
+        transform: scale(1.07);
         margin: 10%;
     }
+      
+
+
+.footer {
+    padding: 15px; /* Slightly reduce padding on smaller screens */
+  
+}
+
+.footer-message {
+    font-size: 14px; /* Adjust message font size for smaller screens */
+}
+
+.footer ul li {
+    display: block; /* Stack list items vertically on small screens */
+    margin: 5px 0; /* Add vertical spacing between items */
+}
 }
 
 

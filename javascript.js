@@ -1,5 +1,5 @@
 let jsonData = {
-    name: "Tayyab",
+    name: "Tayyab Ur Rehman",
     about: "My name is Tayyab ur Rehamn. I am a computer science student. I love problem solving and learning new technologies, and these days I am learning web development.",
     gitlink: "https://github.com/Tayyab-ur-Rehman",
     instalink: "https://www.instagram.com/tayyab_rh/",

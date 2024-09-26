@@ -31,27 +31,32 @@ header h1 {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 1rem;
-    gap: 1rem;
+
+    justify-content:space-evenly;
+    padding: 14px;
+     
+     margin: 20px;
 }
 
 .project {
     display:list-item;
-    background: #fff;
+    background: #0e0000;
     border-radius: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 12px rgba(114, 108, 108, 0.767);
     overflow: auto;
     width: calc(33% - 20px); 
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    color: aliceblue;
+    padding: 10px;
+
+
 }
 
 .project_vid
 {
     display:list-item;
-    background: #fff;
+    background: #080000;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: auto;
@@ -60,6 +65,7 @@ header h1 {
     text-align: center;
     margin: 0;
     padding: 0;
+    color: aliceblue;
     font-weight: bold;
 }
 
@@ -101,6 +107,7 @@ header h1 {
 {
    padding: 20%;
    color: #2326d1;
+   
 }
 
 
@@ -112,6 +119,7 @@ header h1 {
         padding: 5px;
         width: 25rem;
         gap: 20px;
+
     }
     
 .project img {
@@ -123,14 +131,16 @@ header h1 {
 
 .project {
 
-    width: calc(33%); 
+    width: calc(39%); 
     height: 80%;
+    padding: 5px;
 
    
 }
 .project_vid
 {
   size: 20%;
+  
 }
 
 
