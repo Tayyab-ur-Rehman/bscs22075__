@@ -2,7 +2,7 @@
 body, h1, h2, p, a {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+  
 }
 
 /* Basic styles */
@@ -13,6 +13,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    width:100%;
 }
 
 header {
@@ -46,10 +47,10 @@ header h1 {
     overflow: auto;
     width: calc(33% - 20px); 
     text-align: center;
-    margin: 10px;
+    margin: 23px;
     color: aliceblue;
     padding: 10px;
-
+    
 
 }
 
@@ -114,10 +115,12 @@ header h1 {
 @media only screen and (max-width: 768px) {
 
 
+
+    
     .projects-container {
        
         padding: 5px;
-        width: 25rem;
+        width:100%;
         gap: 20px;
 
     }
@@ -134,7 +137,7 @@ header h1 {
     width: calc(39%); 
     height: 80%;
     padding: 5px;
-
+    margin: 10px;
    
 }
 .project_vid

@@ -1,81 +1,46 @@
 
 
-/* Footer styles */
-.footer {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* White text color */
-    text-align: center; /* Center-align text */
-    padding: 0px ; /* Vertical padding */
-    border-top: #fff solid;
-}
 
-.footer-message {
-    font-size: 1-px; /* Message font size */
-    margin: 0 0 10px 0; /* Margin below the message */
-}
-
-.footer p {
-    margin: 5px 0; /* Space between paragraphs */
-}
-
-.footer ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-}
-
-.footer ul li {
-    display: inline; /* Display list items inline */
-    margin: 0 10px; /* Horizontal spacing */
-}
-
-.footer a {
-    color: #fff; /* White link color */
-    text-decoration: none; /* Remove underline from links */
-}
-
-.footer a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
 
 
 #Sec1 {
-    background: linear-gradient( red, rgb(47, 8, 51));
+    background: linear-gradient( #384B70, #507687);
 
     color: white;
    
 }
 
 #Sec2 {
-    background: linear-gradient( rgb(47, 8, 51),rgb(27, 192, 151) );
-    color: white;
+    background: linear-gradient(#FCFAEE,#B8001F);
+    color: rgb(0, 0, 0);
 }
 
 #Sec3 {
-    background: linear-gradient( rgb(27, 192, 151) 20%,  rgb(2, 44, 21) 80%);
+    background: linear-gradient(#384B70, #507687);
 
     color: white;
 }
 
 #Sec4 {
-    background: linear-gradient(  rgb(141, 7, 7) , rgb(0, 0, 0) );
-    color: white;
+    background: linear-gradient(#FCFAEE,#B8001F);
+    color: rgb(0, 0, 0);
 }
 
 #Sec5 {
-    background: linear-gradient(  rgb(38, 170, 26) , rgb(21, 45, 182) );
+    background: linear-gradient(#384B70, #507687);
     color: white;
    
 }
 
 #Sec6 {
-    background: linear-gradient(  rgb(228, 214, 15) , rgb(0, 0, 0) );
-    color: white;
+    background: linear-gradient( #FCFAEE,#B8001F);
+    color: rgb(0, 0, 0);
 }
 
 
 
 #Sec7{
-    background: linear-gradient(  rgb(233, 102, 102) , rgb(129, 9, 59) );
+    background: linear-gradient( #384B70, #507687);
     color: rgb(240, 240, 240);
 }
 
@@ -90,10 +55,10 @@ section:hover {
 
 body {
     font-family: 'Arial', sans-serif;
-    margin-left : 10px;
-    margin-right : 10px;
-    padding: 5px;
-    background-color: #f4f4f4;
+    margin-left : 0px;
+    margin-right : 0px;
+    padding: 0px;
+    background-color: #333;
     color: #333;
 }
 
@@ -133,10 +98,13 @@ section {
         padding: 0 1rem;
     }
 
+
     section {
         padding: 1rem;
-        margin: 10%;
-        border-radius: 20%;
+        margin-left: 20%;
+        border-radius: 10%;
+        width:auto;
+        
     }
     section:hover {
         
@@ -144,22 +112,8 @@ section {
         transform: scale(1.07);
         margin: 10%;
     }
-      
+        
 
-
-.footer {
-    padding: 15px; /* Slightly reduce padding on smaller screens */
-  
-}
-
-.footer-message {
-    font-size: 14px; /* Adjust message font size for smaller screens */
-}
-
-.footer ul li {
-    display: block; /* Stack list items vertically on small screens */
-    margin: 5px 0; /* Add vertical spacing between items */
-}
 }
 
 
